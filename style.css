@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background-color: #f1f1f1;
+    color: black;
+
+    font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+@media only screen and (max-width: 700px) {
+
+    #select ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contact .details {
+        font-size: 1.2rem;
+    }
+
+}
+
+#logo {
+    margin-top: 9px;
+}
+
+#logo img {
+    margin: 4px 0px;
+    border-radius: 105px;
+    width: 200px;
+    height: 200px;
+   
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .heading {
+  margin: 0 0;
+  padding: 0 ;
+    font-size: 3.4rem;
+}
+
+#home .short {
+    /* background-color: grey; */
+    border-radius: 10px;
+    padding: 5px 46px;
+    font-weight: bolder;
+    /* opacity: 0.7; */
+}
+
+/* table */
+#tablelist {
+    margin: 70px 0px;
+}
+
+.image {
+    box-shadow: 6px 7px 8px 2px #c0bbbb;
+
+    margin: 33px;
+    border-radius: 9px;
+    height: 250px;
+    width: 250px;
+}
+
+.tables h1 {
+    font-size: 3rem;
+    padding: 1px 10px;
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.tables table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 90%;
+}
+
+.tables th,
+td {
+    border: 1px solid #80808042;
+    padding: 13px 10px;
+}
+
+.tables table th {
+    color: grey;
+    background-color: rgb(249 249 249);
+    font-size: 1rem;
+}
+
+#contact {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    background-color: white;
+}
+
+#contact .details {
+    font-size: 1.1em;
+    font-weight: bolder;
+}
+
+.details h1 {
+    padding-bottom: 34px;
+}
+#contact .space {
+  margin-top: 18px;
+  font-size: 1.6rem
+}
