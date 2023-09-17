@@ -94,7 +94,7 @@ td {
 }
 
 #contact {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui;
     padding: 30px;
     background-color: white;
 }
