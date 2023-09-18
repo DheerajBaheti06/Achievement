@@ -11,13 +11,17 @@
 
 <body>
     <main>
-        <div id="logo">
-            <img src="BAHETI'S GRAHASTI (2).png"
-                alt="logo" />
-            <!-- <img src="https://marketplace.canva.com/EAFauoQSZtY/1/0/1600w/canva-brown-mascot-lion-free-logo-qJptouniZ0A.jpg"
-                alt="logo" /> -->
-        </div> 
+        <audio controls autoplay src="./welcome audio.mp4" id="audioTrack">there is a
+            problem
+        </audio>
+        <video autoplay muted id="myVideo">
+            <source src="./welcome video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
         <section id="home">
+            <div id="logo">
+                <img src="BAHETI'S GRAHASTI (2).png" alt="logo" />
+            </div>
             <span class="short">
                 <h1 class="heading">BAHETI'S ग्रहस्थी उद्योग</h1>
                 HOMEMADE SPICES, NAMKEENS, BADI, CHIPS, AACHAR
@@ -335,7 +339,7 @@
                 <table>
                     <tr>
                         <th>Aachar Flavours</th>
-                        <th>Rate (per 200g pkt)</th>
+                        <th>Rate (per kg)</th>
                     </tr>
                     <tr>
                         <td>आम आचार मारवाड़ी</td>
@@ -378,7 +382,7 @@
 
         </section>
         <hr style="color: #e0e0e0cb;">
-       
+
         <!-- <div class="images">
             <img src="./images/namkeen.jpg" alt="" class="image">
             <img src="./images/flavored-khakhra.jpg" alt="" class="image">
@@ -392,11 +396,30 @@
                 <p>सौ: दुर्गाबाहेती:- &phone; <a href="tel:9301613460"> 9301613460</a></p>
                 <p>राजेश बाहेती:- &phone; <a href="tel:9301613460"> 9407933460</a></p>
                 <p class="space">होम डिलेवरी उपलब्ध है!! धन्यवाद 😊</p>
-
-
         </section>
-
     </main>
+
+
+    <script>
+        // audio :-----
+        const myAudio = document.querySelector("#audioTrack");
+        myAudio.style.display = "none";
+        document.querySelector("#home").addEventListener("click", (e) => myAudio.play());
+
+        // video :-----
+
+        const home = document.querySelector("#home");
+        const welcomeVideo = document.querySelector("#myVideo");
+        home.style.display = "none";
+        const myF = () => {
+            if (home.style.display = "none") {
+                welcomeVideo.style.display = "none";
+                home.style.display = "block"
+            }
+        }
+        setTimeout(myF, 3500);
+
+    </script>
 </body>
 
 </html>
